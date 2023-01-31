@@ -1,0 +1,37 @@
+#key-box {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  padding: 10px;
+  background-color: #2b2929;
+}
+
+.number,
+.operations,
+.equals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #171212;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.outer-box {
+  background-color: #1b1919;
+}
+.clear-all-box,
+.clear-one-box,
+.time-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(8, 8, 8);
+  color: #0e0d0d;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+}
