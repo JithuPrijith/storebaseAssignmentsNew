@@ -11,7 +11,7 @@ function factorial(x) {
 }
 
 function power(x, y) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     let result = x;
     for (let i = 1; i < y; i++) {
       result = result * x;
@@ -24,7 +24,7 @@ function power(x, y) {
 
 function calculate(x, y) {
   let sum = 0;
-  let resPromise = factorial(x)
+  factorial(x)
     .then((res) => {
       console.log(res);
       sum += res;
@@ -47,5 +47,4 @@ function calculate(x, y) {
       return res;
     });
 }
-
 calculate(5, 4);
