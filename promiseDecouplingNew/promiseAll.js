@@ -1,5 +1,3 @@
-const { log } = require("console");
-
 function factorial(x) {
   return new Promise((resolve) => {
     let result = x;
@@ -13,7 +11,7 @@ function factorial(x) {
 }
 
 function power(x, y) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     let result = x;
     for (let i = 1; i < y; i++) {
       result = result * x;
